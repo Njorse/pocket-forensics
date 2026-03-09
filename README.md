@@ -1,28 +1,28 @@
 # 🕵️‍♂️ PocketForensics
 
-Herramienta móvil de informática forense diseñada para la extracción de metadatos (EXIF) y la verificación de integridad de evidencia digital mediante hashes criptográficos (SHA-256). Procesamiento 100% local en el dispositivo (On-Device) para garantizar la privacidad y la cadena de custodia.
+A professional mobile digital forensics tool designed for metadata extraction (EXIF) and digital evidence integrity verification through cryptographic hashing (SHA-256). All processing is performed 100% on-device to ensure privacy and maintain the chain of custody.
 
-## ✨ Características Principales
-* **Análisis de Integridad (SHA-256):** Generación de firmas digitales únicas a partir de los bytes crudos del archivo para detectar alteraciones.
-* **Extracción de Metadatos EXIF:** Lectura profunda de información oculta en imágenes (Coordenadas GPS, modelo de cámara, fechas originales).
-* **Procesamiento Local Seguro:** No requiere conexión a internet; los archivos nunca abandonan el dispositivo.
-* **UI/UX Forense:** Interfaz moderna en Dark Mode con efectos *Glassmorphism* y animaciones fluidas para retroalimentación de estado.
+## ✨ Key Features
+* **Integrity Analysis (SHA-256):** Generates unique digital signatures from raw file bytes to detect any unauthorized alterations.
+* **EXIF Metadata Extraction:** Deep-scan of hidden information in images, including GPS coordinates, camera models, and original timestamps.
+* **Secure Local Processing:** No internet connection required; files never leave the device, ensuring data sovereignty.
+* **Forensic UI/UX:** Modern Dark Mode interface featuring glassmorphism effects and fluid animations for real-time status feedback.
 
-## 📸 Interfaz de Usuario
+## 📸 User Interface
 
 <p align="center">
-  <img src="screenshots/start_screen.png" width="300" alt="Pantalla de Inicio">
+  <img src="screenshots/start_screen.png" width="300" alt="Start Screen">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="screenshots/result_screen.png" width="300" alt="Resultados y Hash">
+  <img src="screenshots/result_screen.png" width="300" alt="Analysis Results">
 </p>
 
-## 🛠️ Arquitectura y Tecnologías
-Este proyecto está construido con **Flutter & Dart**, aplicando principios de Clean Architecture:
-* **Feature-First Structure:** Módulos altamente desacoplados (`scanner`, `report`, `history`).
-* **MVVM Pattern:** Separación estricta entre la UI (Views/Animations) y la lógica de estado (ViewModels).
-* **Paquetes clave:** `crypto` (cálculo de hashes), `exif` (extracción de metadatos), `image_picker` (acceso a evidencia).
+## 🛠️ Architecture & Tech Stack
+This project is built with **Flutter & Dart**, adhering to Clean Architecture principles:
+* **Feature-First Structure:** Highly decoupled modules including `scanner`, `report`, and `history`.
+* **MVVM Pattern:** Strict separation between UI (Views/Animations) and state logic (ViewModels).
+* **Core Packages:** `crypto` for hashing, `exif` for metadata extraction, and `image_picker` for evidence handling.
 
-## 🚀 Cómo ejecutarlo
-1. Clona el repositorio.
-2. Ejecuta `flutter pub get` para instalar dependencias.
-3. Ejecuta `flutter run` (Soporta Android, iOS y compilación Web/Escritorio para depuración rápida).
+## 🚀 Getting Started
+1. Clone the repository.
+2. Run `flutter pub get` to install dependencies.
+3. Run `flutter run` (Supports Android, iOS, and Web/Desktop for rapid debugging).
